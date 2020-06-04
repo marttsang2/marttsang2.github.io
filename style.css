@@ -38,8 +38,9 @@ hr {
 }
 
 #section4 p {
+    display: inline-block;
     padding-top: 10%;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .card {
