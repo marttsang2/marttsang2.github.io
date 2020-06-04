@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'Montaga', serif;
 }
-p,ul{
+
+p,
+ul {
     padding-left: 20px;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -17,10 +20,26 @@ hr {
     margin-left: 5px;
 }
 
+.main {
+    padding-top: 70px;
+}
+
 #section1 {
-    background: url(background.jpg);
+    background: url(https://media.giphy.com/media/BwFWYaIbKgDL2/giphy.gif);
     background-size: cover;
     height: 1000px;
+}
+
+#section1 h2 {
+    text-align: center;
+    color: white;
+    padding-top: 40%;
+    font-size: 60px;
+}
+
+#section4 p {
+    padding-top: 10%;
+    font-size: 15px;
 }
 
 .card {
@@ -38,50 +57,65 @@ hr {
 .card-title {
     font-size: 18px;
 }
-.subtitle hr{
+
+.subtitle hr {
     margin-left: auto;
     margin-right: auto;
     width: 6%;
+    border-width: 2px;
 }
+
 .card:hover {
     box-shadow: 0 8px 50px -5px rgba(0, 0, 0, 0.1);
 }
+
 #section3 h2 {
     text-align: center
 }
-.col-sm-5 
-{
-   display: inline-block;
-   position: relative;
-   transition: 0.5s;
+
+.col-sm-5 {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
-.col-sm-5::before
-{ 
-  content: '';
-  position: absolute;
-  top: 0; right: 0;
-  bottom: 0; left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: .5s;
-}
-img[src="search.png"]{
+
+.col-sm-5::before {
+    content: '';
     position: absolute;
-    top:50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: .5s;
+}
+
+img[src="search.png"] {
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: white;
     height: 50px;
     filter: invert();
     opacity: 0;
 }
-.col-sm-5:hover::before{
- opacity: 1;
+
+.col-sm-5:hover::before {
+    opacity: 1;
 }
-.col-sm-5:hover img[src="search.png"]{
- opacity: 1;
+
+.col-sm-5:hover img[src="search.png"] {
+    opacity: 1;
 }
-.col-sm-5:hover img[src="bottle.png" ]{
+
+.col-sm-5:hover img[src="bottle.png"] {
     opacity: 1;
     transition: .3s;
+}
+
+footer {
+    text-align: center;
+
 }
